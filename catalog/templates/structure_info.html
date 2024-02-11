@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ structure.name }}
+{% endblock %}
+
+{% block content %}
+    <div class="structure-full-info">
+        <img src="{{ structure.photo.url }}">
+        <h3>{{ structure.name }}</h3>
+        <p>{{ structure.full_description }}</p>
+        <p>{{ structure.mark }}</p>
+        <p>{{ structure.prognosis }}</p>
+        <p>{{ structure.build_date }}</p>
+        <p>{{ structure.last_repair_date }}</p>
+        <p>{{ structure.type }}</p>
+    </div>
+    <div class="comment-div">
+
+    </div>
+{% endblock %}

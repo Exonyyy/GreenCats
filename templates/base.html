@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' href = "{% static 'css/style.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class = "header height-60">
+        <div class = "logo">
+            <a href="{% url 'main' %}"><img src="{% static "media/page_contents/logo.png" %}"></a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="{% url 'catalog' %}">Каталог</a></li>
+                <li><a href="{% url 'forum' %}">Форум</a></li>
+            </ul>
+        </nav>
+        <div class="authentication">
+            <a><p>Войти</p></a>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

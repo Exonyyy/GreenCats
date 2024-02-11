@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Форум - набор волонтёров
+{% endblock %}
+
+{% block content %}
+    <div class="forum">
+        {% for topic in topics %}
+            <div class="activist-topic">
+                <h1>{{ topic.topic_name }}</h1>
+                <h3>{{ topic.from_person.name }}</h3>
+                <img src="{{ topic.from_person.logo }}">
+                <p>{{ topic.description }}</p>
+                <p>{{ topic.took_park }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

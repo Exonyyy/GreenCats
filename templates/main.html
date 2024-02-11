@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    GreenCats - Интерактивная карта
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="title-txt">GREENCATS - мы занимаемся вопросом сохранности берега</h2>
+        <img src="{% static "media/page_contents/main-image.png" %}" height="300px" width="100%" class="background-img">
+    </div>
+    <div class="map-out-container">
+        <div class="map-in-container">
+            <h1>Карта</h1>
+            {{ map|safe }}
+        </div>
+    </div>
+{% endblock %}

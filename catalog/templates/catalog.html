@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Каталог сбор
+{% endblock %}
+
+{% block content %}
+    <div class="catalog-div">
+        {% for structure in structures %}
+            <div class="structure-card">
+                <a href="{% url 'structure-info' name=structure.name %}">
+                    <img src="{{ structure.photo.url }}">
+                    <h3>{{ structure.name }}</h3>
+                    <p>{{ structure.short_description }}</p>
+                    <p>{{ structure.mark }}</p>
+                    <p>{{ structure.prognosis }}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

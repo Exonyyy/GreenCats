@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Kurale, sans-serif;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #44c765;
+    font-size: 22px;
+    border-bottom: 2px solid #44c765;
+}
+
+.header li {
+    display: inline-block;
+    position: relative;
+    top: 18px;
+    width: 150px;
+}
+
+.header div {
+    display: inline-block;
+    position: relative;
+}
+
+.logo {
+    top: 10px;
+    width: 200px;
+    left: 30px;
+}
+
+.header ul {
+    width: 400px;
+    margin-left: 400px;
+}
+
+.authentication {
+    float: right;
+    top: 18px;
+    margin-left: 20%;
+}
+
+.map-out-container {
+    margin-top: 40px;
+    width: 75%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 200px;
+}
+
+.map-in-container {
+    padding: 10px;
+    border: 2px solid #44c765;
+}
+
+.map-in-container h1 {
+    padding-left: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.title-txt {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.forum {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    display: grid;
+}
